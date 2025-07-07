@@ -1,6 +1,5 @@
 from tkinter import Tk, Toplevel, Label
 from gui import PredictorApp
-# from utils import load_config
 
 """for pkg in ["nltk", "speechrecognition", "pyaudio", "pillow"]:
      ensure_installed(pkg)"""

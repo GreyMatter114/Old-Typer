@@ -5,6 +5,7 @@ from PIL import Image, ImageTk
 from history import is_stale
 from speech import recognize_speech
 
+asset_path="../assets/"
 
 class PredictorApp:
     def __init__(self, root, config, trie, conn):
@@ -54,7 +55,7 @@ class PredictorApp:
             self.pred_buttons.append(btn)
 
         # Mic icon
-        mic_image = Image.open("mic.png").resize((24, 24))
+        mic_image = Image.open(asset_path+"mic.png").resize((24, 24))
         self.mic_icon = ImageTk.PhotoImage(mic_image)
 
         self.speech_btn = Button(root, text=" Speak", image=self.mic_icon, compound=LEFT,

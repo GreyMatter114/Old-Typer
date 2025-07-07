@@ -1,0 +1,6 @@
+{
+    "trie_cache_path": "../data/trie.pkl",
+    "history_db_path": "../data/history.db",
+    "stale_days": 7
+  }
+  
