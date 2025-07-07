@@ -1,0 +1,4 @@
+nltk
+speechrecognition
+pyaudio
+pillow
