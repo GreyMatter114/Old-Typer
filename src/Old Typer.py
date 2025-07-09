@@ -12,7 +12,7 @@ from history import init_db, is_stale
 
 import json, subprocess, sys, importlib.util
 
-def load_config(path="config.json"):
+def load_config(path="./config.json"):
     with open(path) as f:
         return json.load(f)
 
@@ -39,7 +39,6 @@ if __name__ == "__main__":
 
     splash = show_splash()
     root.update()
-
     conn = init_db(config["history_db_path"])
     if is_stale(conn, config["stale_days"]):
         trie = build_trie()
